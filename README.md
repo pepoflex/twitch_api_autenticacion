@@ -1,4 +1,4 @@
-# Twitch Authentication Node Sample
+# Twitch Authentication Node Sample + Verificar si estoy en Directo
 Here you will find a simple Express web app illustrating how to authenticate Twitch API calls using the OAuth authorization code flow.  This sample uses [Express](http://expressjs.com/), [Passport](http://passportjs.org/), and [Handlebars](http://handlebarsjs.com/).
 
 ## Installation
