@@ -72,7 +72,7 @@ passport.use('twitch', new OAuth2Strategy({
     profile.refreshToken = refreshToken;
     console.log(profile);
 
-    /* Verificar Estado */
+    /* Verificar si estoy en Directo */
     var datos = JSON.stringify(profile, null, 4); 
     var estado = JSON.parse(datos);
     var a = estado['data'][0]['is_live'];
@@ -85,7 +85,7 @@ passport.use('twitch', new OAuth2Strategy({
     else {
       console.log("Estoy Desconectado");
     }
-    /* Fin Verificar Estado */
+    /* Fin Verificar si estoy en Directo */
 
 
     // Securely store user profile in your DB
